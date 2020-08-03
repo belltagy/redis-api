@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
@@ -99,6 +101,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+#####################################
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
